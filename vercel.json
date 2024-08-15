@@ -1,15 +1,1 @@
-{
-    "version":2,
-    "builds":[
-        {
-            "src":"./main.tsx",
-            "use":"@vercel/node"
-        }
-    ],
-    "routes":[
-        {
-            "src":" (.*)",
-            "dest":"src/router.jsx"
-        }
-    ]
-}
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
