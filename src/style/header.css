@@ -12,7 +12,7 @@
   background-color: var(--color-site);
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
   height: 4.5rem;
   width: auto;
   font-family: "Inter";
@@ -22,7 +22,7 @@
   margin: 2%;
 }
 .container-logo {
-  width: 50rem;
+  width: 50vw;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -119,17 +119,31 @@ nav {
   transition: 0.4s;
   scale: 1.1;
 }
+.container-ico{
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.span-menu-hamburgue{
+  width: 50px;
+}
 
-@media (min-width: 670px) and (max-width:950px){
-  .itens-links{
-    display: None;
+@media (min-width:0px) and (max-width:950px){
+  .header{
+    width: 100%;
+  }
+  .span-menu-hamburgue{
+    display: block;
   }
   nav{
-    justify-content:flex-end;
+    justify-content:center;
+    display: None;
   }
 }
-@media (min-width: 951px){
+@media (min-width:951px){
   .span-menu-hamburgue{
-    display: None;
+    display: none;
   }
 }

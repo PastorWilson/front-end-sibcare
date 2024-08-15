@@ -88,6 +88,8 @@ body{
     display: flex;
     width: 80vw;
     gap: 1.1rem;
+    flex-flow: row nowrap;
+    height: auto;
 }
 .lista-valores li {
     font-size: 18px;
@@ -100,17 +102,33 @@ body{
 }
 
 
-@media (min-width: 0px ) and (max-width: 480px) {
-    #container-bio{
-        flex-direction: column;
-        height: auto;
-        width: 100%;
+
+@media  (max-width: 680px) {
+    #container-info-principios{
+        justify-content: center;
     }
-}
-@media (min-width: 481px ) and (max-width: 680px) {
     #container-bio{
         height: auto;
         flex-direction: column;
         width: auto;
+    }
+    .lista-valores{
+        flex-direction: column;
+    }
+    .container-misao-visao{
+        height: auto;
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .container-missao{
+        border-right: None;
+        padding-bottom: 10px;
+    }
+    .container-info-bio{
+        width: 85%;
+    }
+    .swiper{
+        width: 14rem;   
     }
 }

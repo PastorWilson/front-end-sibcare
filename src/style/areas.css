@@ -11,6 +11,7 @@
     flex-direction: column;
     width: 20vw;
     height: 50vh;
+    max-height: 60vw;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #container-areas .container-title{
@@ -28,6 +29,7 @@
 }
 #container-areas .img-area{
     width: 10vw;
+    max-width: 40vw;
     border: 1px solid #ffff;
     border-radius: 5px
 }

@@ -1,15 +1,7 @@
 .container-aside{
     position: fixed;
     bottom: 3vw;
-    left: 95%;
-}
-.aside-mensagem-whatsapp{
-    background-color: #ffff;
-    display:none;
-}
-.aside-mensagem-whatsapp.show{
-    background-color: #ffff;
-    display:block;
+    left: 94vw;
 }
 .container-aside-whatsapp{
     background-color: #10DF53;

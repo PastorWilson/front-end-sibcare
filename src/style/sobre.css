@@ -61,5 +61,15 @@
   .swiper-pagination-bullet swiper-pagination-bullet-active{
     background-color: #ffff;
   }
-  
+
+  @media  (max-width: 680px){
+    .title-bio{
+      text-align: center;
+    }
+    .title-sobre-carrossel{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
 

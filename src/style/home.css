@@ -23,32 +23,31 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
+  gap: 10px 20px;
   width: 100vw;
   background-color: var(--color-site);
   padding: 10px;
   height: 60vh;
 }
-@media (max-width: 480px) and (min-width: 0px) {
-  #container-areas {
-    width: auto;
-  }
-  .container-title-area-atuacao {
-    width: 100%;
+@media (max-width: 768px) {
+  .img-home-main{
+    height: 50vh;
   }
   .container-areas-atuacao {
+    height: auto;
+  }
+  .container-areas-atuacao{
     flex-direction: column;
-    height: auto;
-    width: auto;
   }
-}
-
-@media (min-width: 600px) and (max-width: 768px) {
-  .container-areas-atuacao {
-    height: auto;
+  .descricao-area{
+    height: auto
+  }
+  .img-area{
+    width: 2020vw;
   }
   #container-areas {
-    width: 70vw;
+    width: 25rem;
     height: 70vh;
     margin: 13px 0px 13px 0px;
   }
@@ -67,23 +66,23 @@
     font-size: 28px;
   }
   #container-contact #formulario-contato {
-    width: 70vw;
+    width: 60vw;
     max-width: 70em;
     height: 90vh;
   }
   #container-contact #formulario-contato .inputs-forms {
-    width: 65vw;
+    width: 80%;
     height: 5vh;
     margin: 10px;
     font-size: 18px;
   }
   #container-contact #formulario-contato .descricao-forms {
-    width: 65vw;
+    width: 80%;
     height: 15vh;
     font-size: 18px;
   }
   #container-contact #formulario-contato .bnt-enviar-mensagem {
-    width: 50vw;
+    width: 80%;
     height: 10vh;
     font-size: 24px;
     margin-top: 20px;
@@ -96,6 +95,10 @@
     height: auto;
     justify-content: center;
   }
+  .container-infomacoes-contato{
+    justify-content: center;
+    display: flex;
+  }
   #container-infomacoes-contato .container-title-contato {
     text-align: center;
     width: 50vw;
@@ -104,7 +107,7 @@
   #container-infomacoes-contato .informacoes-contato {
     align-items: center;
     display: flex;
-    width: 60vw;
+    width: 80%;
     justify-content: center;
   }
   #container-contact .title-contato {
@@ -113,29 +116,47 @@
   .p-contato {
     font-size: 18px;
   }
+  #container-infomacoes-contato .container-info{
+    width: 100%;
+  }
   #container-infomacoes-contato .container-info-telefones {
     width: 50vw;
+    margin: auto;
     align-items: center;
     justify-content: center;
   }
   #container-infomacoes-contato .informacoes-contato .link-contato {
-    width: 40vw;
+    width: auto;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container-aside{
+    left: 90vw;
   }
 }
 
 @media (max-width: 1279px) and (min-width: 769px) {
   .container-areas-atuacao {
     height: auto;
+    width: auto;
     justify-content: center;
     align-items: center;
   }
   #container-areas {
-    width: 20vw;
-    height: 50vh;
+    width: 25vw;
+    height: 60vh;
     margin: 15px 0px 15px 0px;
   }
   .container-areas-atuacao {
     justify-content: space-evenly;
     padding: 10px;
+  }
+  #container-contact{
+    height: 80vh;
+  }
+  .section-contact{
+    height: auto;
+    padding: 20px;
   }
 }

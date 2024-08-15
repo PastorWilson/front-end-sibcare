@@ -1,7 +1,7 @@
 
 export function Forms() {
     return (
-        <form id="formulario-contato" action="mailto:Sibcare1212@gmail.com">
+        <form id="formulario-contato" action="mailto:Sibcare1212@gmail.com" method="POST">
             <div className="container-title-form">
                 <label htmlFor="">Enviar Mensagem</label>
             </div>

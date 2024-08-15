@@ -12,7 +12,7 @@ export function Areas(props) {
         <Imgs src={props.src} class ="img-area" alt={props.alt} />
       </div>
       <div className = "container-descricao-area">
-        <p className="descricao-area">{props.descricao}</p>
+        <div className="descricao-area">{props.descricao}</div>
       </div>
       <div className="container-link-area">
         <Links src={props.urlLink} element="Ver Procedimentos" />
