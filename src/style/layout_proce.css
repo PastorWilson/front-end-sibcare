@@ -1,0 +1,57 @@
+.container-procedimentos{
+    background-color: var(--color-site);
+    width: 15rem;
+    height: 18rem;
+    padding-bottom:16px ;
+    margin: 10px 16px 25px 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.container-infomacoes-procedimentos{
+    font-family: "Inter";
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+.title-proce{
+    font-size: 14px;
+    margin: 0px 1px 0px 1px;
+    text-shadow: 0px 0px 10px #000;
+    color:#ffff;
+    font-weight: 400;
+}   
+.container-descricao-proce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.descricao-proce{   
+    font-size: 13px;
+    color:#7f6d4e;
+    font-family: "Inter";
+    text-align:justify;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.links-precedimentos{
+    text-decoration: none;
+    width: auto;
+    height: 0px;
+}
+.container-procedimentos:hover{
+    transition: 0.7s;
+    scale: 1.1;
+}
+.container-title-proce{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body #footer {
+  display: flex;
+  align-items: center;
+  position: bottom;
+  justify-content: center;
+  font-family: "Inter";
+  padding: 12px 0px 12px 0px;
+  background-color: var(--color-site);
+}
+#footer .container-right-footer{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+#footer .container-right-footer h3{
+  color: #7f6d4e ;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+.container-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+}
+.links-img-footer{
+  text-decoration: none;
+}
+
+.img-redes-footer{
+  width: 25px;
+  margin: 8px 2px 0px 2px;
+}
+.router-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20%;
+  margin-bottom: 10px;
+}
+.title-router {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: 'Times New Roman';
+  color: #7f6d4e;
+}
+#footer .container-center-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40vw;
+  color: #ffff
+}
+
+.img-footer{
+  width: 25vw;
+  padding: 0%;
+  margin: 5%;
+  display: flex;
+}
+
+#footer .container-left-footer{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  font-family: "Inter";
+  align-items: safe;
+  width: 30vw;
+}
+#footer .links-router{
+  color: #ffff;
+  font-family: "Inter";
+  text-decoration: none;
+  margin: 4px;
+}
+#footer .container-left-footer .container-info{
+  margin: 5px 0px 5px 0px;
+  padding: 3px 0px 3px 0px;
+}
+#footer .container-title-info h3{
+  color: #7f6d4e ;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+#footer .title-info{
+  color: #ffff;
+  font-weight: normal;
+  margin: 5px 0px 5px 0px;
+}
+#footer .info{
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 950px) {
+
+
+  
+}

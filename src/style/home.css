@@ -1,0 +1,141 @@
+:root {
+  --color-site: #e3aaa1;
+  --cor-secundaria: #7f6d4e;
+}
+.img-home-main {
+    width: 100%;
+}
+.container-title-area-atuacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  height: 20vh;
+}
+.title-area-atuacao {
+  font-family: "Times New Roman";
+  font-size: 40px;
+  font-weight: normal;
+  color: var(--cor-secundaria);
+}
+.container-areas-atuacao {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: var(--color-site);
+  padding: 10px;
+  height: 60vh;
+}
+@media (max-width: 480px) and (min-width: 0px) {
+  #container-areas {
+    width: auto;
+  }
+  .container-title-area-atuacao {
+    width: 100%;
+  }
+  .container-areas-atuacao {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .container-areas-atuacao {
+    height: auto;
+  }
+  #container-areas {
+    width: 70vw;
+    height: 70vh;
+    margin: 13px 0px 13px 0px;
+  }
+  #container-contact {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 20px 0px;
+  }
+  .container-title-form {
+    height: 10vh;
+    font-size: 28px;
+  }
+  #container-contact #formulario-contato {
+    width: 70vw;
+    max-width: 70em;
+    height: 90vh;
+  }
+  #container-contact #formulario-contato .inputs-forms {
+    width: 65vw;
+    height: 5vh;
+    margin: 10px;
+    font-size: 18px;
+  }
+  #container-contact #formulario-contato .descricao-forms {
+    width: 65vw;
+    height: 15vh;
+    font-size: 18px;
+  }
+  #container-contact #formulario-contato .bnt-enviar-mensagem {
+    width: 50vw;
+    height: 10vh;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  #container-infomacoes-contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    height: auto;
+    justify-content: center;
+  }
+  #container-infomacoes-contato .container-title-contato {
+    text-align: center;
+    width: 50vw;
+    font-size: 18px;
+  }
+  #container-infomacoes-contato .informacoes-contato {
+    align-items: center;
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+  }
+  #container-contact .title-contato {
+    font-size: 22px;
+  }
+  .p-contato {
+    font-size: 18px;
+  }
+  #container-infomacoes-contato .container-info-telefones {
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  }
+  #container-infomacoes-contato .informacoes-contato .link-contato {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 769px) {
+  .container-areas-atuacao {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  #container-areas {
+    width: 20vw;
+    height: 50vh;
+    margin: 15px 0px 15px 0px;
+  }
+  .container-areas-atuacao {
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,27 @@
+.container-aside{
+    position: fixed;
+    bottom: 3vw;
+    left: 95%;
+}
+.aside-mensagem-whatsapp{
+    background-color: #ffff;
+    display:none;
+}
+.aside-mensagem-whatsapp.show{
+    background-color: #ffff;
+    display:block;
+}
+.container-aside-whatsapp{
+    background-color: #10DF53;
+    border-radius: 100%;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside-logo-whatsapp{
+    width: 45px;
+}

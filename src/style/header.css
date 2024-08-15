@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+:root{
+  --color-site: #E3AAA1;
+  --cor-secundaria:#7F6D4E;
+}
+
+.header {
+  background-color: var(--color-site);
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 4.5rem;
+  width: auto;
+  font-family: "Inter";
+}
+.img-logo-header {
+  width: 250px;
+  margin: 2%;
+}
+.container-logo {
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+nav {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span-menu-hamburgue{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+}
+.icon-menu-hamburgue{
+  width: 30px;
+  margin: 3px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.icon-menu-hamburgue:hover{
+  transition: 0.5s;
+  border-radius: 20px;
+  background-color: #c2c2c2;
+}
+.container-link-services{
+  cursor: pointer;
+  font-weight: 300;
+}
+.itens-links {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  font-size: 16px;
+  list-style: none;
+  margin: 2px;
+  justify-content: space-evenly;
+}
+.itens-links li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  font-weight: 300;
+  cursor: pointer;
+}
+.itens-links li a:hover{
+  text-decoration: underline;
+}
+.icon-img-seta{
+  width: 20px;
+}
+.sublinks{
+  background-color: #FFFF;
+  list-style: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position:absolute;
+  padding: 7px;
+}
+.sublinks li a{
+  margin: 3px;
+  font-weight: 300;
+  color:#000;
+}
+.sublinks li a:hover{
+  text-decoration: underline;
+}
+.container-link-services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#ffff;
+  font-family: "Inter";
+}
+.itens-links .btn-agendar {
+  background-color: #ffff;
+  font-size: 16px;
+  width: 6rem;
+  height: 2rem;
+  color: #e4aaa2;
+  border-radius: 50px;
+  padding: 2px;
+  border: none;
+  transition: 0.5s;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: "Inter";
+}
+.itens-links .btn-agendar:hover {
+  transition: 0.4s;
+  scale: 1.1;
+}
+
+@media (min-width: 670px) and (max-width:950px){
+  .itens-links{
+    display: None;
+  }
+  nav{
+    justify-content:flex-end;
+  }
+}
+@media (min-width: 951px){
+  .span-menu-hamburgue{
+    display: None;
+  }
+}

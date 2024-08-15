@@ -1,0 +1,154 @@
+
+:root{
+  --color-site: #E3AAA1;
+  --cor-secundaria:#7F6D4E;
+}
+#container-main-informacao-procedimento .title {
+  color: var(--cor-secundaria);
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
+}
+.img-procedimento{
+  width: 35vw;
+  border-radius: 10%;
+
+}
+.container-info-procedimento {
+  flex-direction: column;
+  width: 40vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+.container-img-procedimento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container-descricao{
+    width: 30vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 5px 10px 5px;
+    font-size: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-btn-link-whatsapp {
+  width: 30vw;
+  align-items: center;
+  margin-top: 10px ;
+  justify-content: center;
+  display: flex;
+  height: 15vh;
+}
+.btn-link-whatsapp {
+  background:var(--color-site);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px;
+  border: 2px solid var(--color-site);
+  width: 12vw;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  color: #ffff;
+  font-size: 18px;
+  font-family: "Inter";
+  transition: 0.7s;
+  border-radius: 50px;
+}
+.btn-link-whatsapp:hover {
+  transition: 0.5s;
+  scale: 1.1;
+}
+.link_whatsapp {
+  text-decoration: None;
+}
+#container-main-informacao-procedimento {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+  height: 80vh;
+}
+.container-h2-procedimentos-relacionados{
+  display: flex;
+  margin: 20px 5px 10px 5px;
+  align-items: center;
+  padding: 4px 5px 2px 5px;
+  justify-content: space-between;
+  gap: 1.1rem;
+}
+.span-procedimento-relacionado{
+  width: 70rem;
+}
+.h2-procedimentos-relacionados{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--cor-secundaria);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-procedimentos-relacionados{
+  display: flex;
+  width: auto;
+  background-color: #ffff;
+  margin: 40px 10px 20px 10px;
+  padding: 5px;
+  height: auto;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem
+}
+.links-procedimento-relacionado{
+  text-decoration: None;
+}
+.procedimento-relacionado{
+  background-color: var(--color-site);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  align-items: center;
+  display: flex;
+  width: 15rem;
+  height: 18rem;
+  padding: 0px 0px 5px 0px ;
+  margin-bottom: 10px;
+  max-width: 15rem;
+  max-height: 19rem;
+  border-radius: 10px 10px 10px 10px;
+}
+.container-img-procedimento-relacionado{
+  width: 100%;
+}
+.img-procedimento-relacionado{
+  width: 100%;
+  height: 23vh;
+  border-radius: 5px 5px 0px 0px;
+}
+.container-title-procedimento-relacionado{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px 10px 5px;
+}
+.title-procedimento-relacionado{
+  font-size: 16px;
+  color:#ffff;
+  font-weight: 400;
+  padding: 0px 2px 0px 2px;
+  font-family: "Inter"
+}
+.p-descricao-procedimento-relacionado{
+  color: var(--cor-secundaria);
+  text-align:justify;
+  margin: 20px 5px 10px 5px;
+  font-size: 12px;
+  font-family:"Inter";
+  font-weight: 300;
+}

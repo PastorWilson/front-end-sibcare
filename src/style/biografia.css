@@ -1,0 +1,116 @@
+body{
+    overflow-x: hidden;
+}
+#container-bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+.img-logo-bio{
+    width: 20rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+.container-info-bio{
+    width: 50rem ;
+}
+#container-bio .title-bio{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #7f6d4e ; 
+}
+.container-info-bio{
+    border-bottom: 2px solid #7f6d4e;
+    padding: 7px;
+    width: 50vw;
+}
+.text-bio{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+#container-info-principios{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+.container-misao-visao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+    width: 80vw;
+    padding: 6px;
+}
+.container-missao{
+    border-right: 2px solid #7f6d4e;
+    margin-right: 6px;
+    padding-right: 5px;
+}   
+.container-visao{
+    margin-left: 6px;
+}
+.title-visao, .title-missao,.title-valores{
+    font-size: 42px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #7f6d4e;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-p-missao,.container-p-visao{
+    text-align: justify;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin:4px 8px 0px 8px
+}
+.container-valores{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.lista-valores{
+    display: flex;
+    width: 80vw;
+    gap: 1.1rem;
+}
+.lista-valores li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: None;
+}
+.lista-valores .span-valores{
+    color: #7f6d4e;
+    font-weight: 500;
+}
+
+
+@media (min-width: 0px ) and (max-width: 480px) {
+    #container-bio{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+}
+@media (min-width: 481px ) and (max-width: 680px) {
+    #container-bio{
+        height: auto;
+        flex-direction: column;
+        width: auto;
+    }
+}
