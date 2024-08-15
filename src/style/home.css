@@ -25,14 +25,151 @@
   align-items: center;
   flex-flow: row nowrap;
   gap: 10px 20px;
-  width: 100vw;
   background-color: var(--color-site);
   padding: 10px;
   height: 60vh;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px)and (max-width: 500px) {
+  .title-area-atuacao{
+    text-align: center;
+  }
   .img-home-main{
-    height: 50vh;
+    height: auto
+  }
+  .container-areas-atuacao {
+    height: auto;
+  }
+  #container-areas .img-area{
+    width: 20vw;
+  }
+  .container-areas-atuacao{
+    flex-direction: column;
+  }
+  #container-areas .container-title .title{
+    font-size: 5vw;
+  }
+  .container-descricao-area{
+    height: auto;
+  }
+  #container-areas .descricao-area{
+    height: auto;
+    font-size: 9px;
+  }
+  #container-areas a{
+    font-size: 10px;
+  }
+  .img-area{
+    width: 100%
+  }
+  #container-areas {
+    width: 40vw;
+    height: auto;
+    min-width: 50vw;
+    margin: 13px 0px 13px 0px;
+
+  }
+  #container-contact {
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 20px 0px;
+  }
+  .container-title-form {
+    height: 10vh;
+    font-size: 28px;
+  }
+  #container-contact #formulario-contato {
+    width: 80vw;
+    height: 90vh;
+    padding: 20px;
+    margin: 10px;
+  }
+  #container-contact #formulario-contato label{
+    text-align: center;
+  }
+  #container-contact #formulario-contato .inputs-forms {
+    width: 80%;
+    height: 5vh;
+    margin: 10px;
+    font-size: 18px;
+  }
+  #container-contact #formulario-contato .descricao-forms {
+    width: 80%;
+    height: 15vh;
+    font-size: 18px;
+  }
+  #container-contact #formulario-contato .bnt-enviar-mensagem {
+    width: 80%;
+    height: 10vh;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  #container-infomacoes-contato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    height: auto;
+    justify-content: center;
+  }
+  .container-infomacoes-contato{
+    justify-content: center;
+    display: flex;
+  }
+  #container-infomacoes-contato .container-title-contato {
+    text-align: center;
+    width: 50vw;
+    font-size: 18px;
+  }
+  #container-infomacoes-contato .informacoes-contato {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  #container-contact .title-contato {
+    font-size: 22px;
+  }
+  .p-contato {
+    font-size: 18px;
+  }
+  #container-infomacoes-contato .container-info{
+    width: 100%;
+    align-items: center;
+  }
+  #container-infomacoes-contato .container-info-telefones {
+    width: 50vw;
+    margin: 4px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #container-infomacoes-contato .informacoes-contato .link-contato {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container-iframe{
+    width: 70%;
+    display: flex;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-aside{
+    left: 80vw;
+  }
+}
+@media (min-width: 501px)and (max-width: 768px) {
+
+  .img-home-main{
+    height: auto
   }
   .container-areas-atuacao {
     height: auto;
@@ -40,16 +177,25 @@
   .container-areas-atuacao{
     flex-direction: column;
   }
-  .descricao-area{
-    height: auto
+  #container-areas .descricao-area{
+    height: auto;
+    font-size: 2.6vw;
   }
-  .img-area{
-    width: 2020vw;
+  #container-areas .container-img-area{
+    height: auto;
+  }
+  #container-areas .img-area{
+    width: 19vw
+  }
+  #container-areas a{
+    font-size: 2.2vw;
   }
   #container-areas {
-    width: 25rem;
-    height: 70vh;
+    width: 40vw;
+    height: auto;
+    min-width: 50vw;
     margin: 13px 0px 13px 0px;
+
   }
   #container-contact {
     flex-direction: column;
@@ -118,12 +264,12 @@
   }
   #container-infomacoes-contato .container-info{
     width: 100%;
+    align-items: center;
   }
   #container-infomacoes-contato .container-info-telefones {
-    width: 50vw;
-    margin: auto;
-    align-items: center;
+    width: 90%;
     justify-content: center;
+    gap: 2rem;
   }
   #container-infomacoes-contato .informacoes-contato .link-contato {
     width: auto;

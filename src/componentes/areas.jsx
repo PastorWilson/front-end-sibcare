@@ -8,7 +8,7 @@ export function Areas(props) {
       <div className="container-title">
         <h2 className="title">{props.title}</h2>
       </div>
-      <div>
+      <div className="container-img-area">
         <Imgs src={props.src} class ="img-area" alt={props.alt} />
       </div>
       <div className = "container-descricao-area">
