@@ -17,7 +17,7 @@ export function Procedimentos() {
 
   const getProc = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/procedimentos");
+      const res = await axios.get("https://api-sibcare-back-end.vercel.app/api/procedimentos");
       const dados = await res.data;
       setProce(dados);
     } catch (error) {

@@ -19,7 +19,7 @@ export function Procedimento() {
   const getProc = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:3000/api/procedimento/${id}`
+        `https://api-sibcare-back-end.vercel.app/api/procedimento/${id}`
       ).then(valor=>{
         setProcedimento(valor.data)
         console.log(procedimento)
@@ -35,7 +35,7 @@ export function Procedimento() {
         return item.categoria;
       });
       const dados = await axios.get(
-        `http://localhost:3000/api/procedimentos/Corporais/${id}`
+        `https://api-sibcare-back-end.vercel.app/api/procedimentos/Corporais/${id}`
       );
       setProcRelacionados(dados.data);
     } catch (error) {}
