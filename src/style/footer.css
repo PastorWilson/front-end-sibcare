@@ -103,6 +103,10 @@ body #footer {
   display: flex;
   align-items: center;
 }
-@media  (max-width: 680px){
-  #footer{}
+
+@media  (max-width: 780px){
+  #footer{ 
+    width: 100vw ;
+    height: auto;
+   }
 }

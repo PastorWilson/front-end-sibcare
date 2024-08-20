@@ -9,11 +9,10 @@
     height: 30vh;
     margin-bottom: 5px;
    
-}
+}   
 .infor-page{
     width: 50vw;
     height: 25vh;
-    position: absolute;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: center;

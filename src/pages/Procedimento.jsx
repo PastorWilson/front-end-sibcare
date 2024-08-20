@@ -10,40 +10,44 @@ import { Proc } from "../componentes/Proce";
 import { Title } from "../componentes/title";
 
 export function Procedimento() {
-  
   const [procedimento, setProcedimento] = useState([]);
   const [procRelacionados, setProcRelacionados] = useState([]);
 
   const { id } = useParams();
 
-  const getProc = async () => {
+  const ProcedimentosRelacionados = async (dados) => {
     try {
-      const res = await axios.get(
-        `https://api-sibcare-back-end.vercel.app/api/procedimento/${id}`
-      ).then(valor=>{
-        setProcedimento(valor.data)
-        console.log(procedimento)
-      })
-
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const ProcedimentosRelacionados = async () => {
-    try {
-      const categoria = await procRelacionados.map((item) => {
+      const categoria = await dados.map((item) => {
         return item.categoria;
       });
       const dados = await axios.get(
-        `https://api-sibcare-back-end.vercel.app/api/procedimentos/Corporais/${id}`
+        `https://api-sibcare-back-end.vercel.app/api/procedimentos/${categoria}/${id}`
       );
       setProcRelacionados(dados.data);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error)
+    }
   };
 
+
   useEffect(() => {
-    getProc()
-    ProcedimentosRelacionados()
+    const getProc = async () => {
+      try {
+        axios
+          .get(`https://api-sibcare-back-end.vercel.app/api/procedimento/${id}`)
+          .then((valor) => {
+            setProcedimento(valor.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getProc().then((dados) => {
+      ProcedimentosRelacionados(dados);
+    });
   }, []);
 
   return (

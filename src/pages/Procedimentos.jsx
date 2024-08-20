@@ -15,6 +15,7 @@ import { Title } from "../componentes/title";
 export function Procedimentos() {
   const [proce, setProce] = useState([]);
 
+
   const getProc = async () => {
     try {
       const res = await axios.get("https://api-sibcare-back-end.vercel.app/api/procedimentos");
@@ -24,9 +25,8 @@ export function Procedimentos() {
       console.log(error);
     }
   };
-
   const proCo = proce.filter((pro) => {
-    return pro.categoria == "Corporais";
+     return pro.categoria == "Corporais";
   });
   const proIn = proce.filter((pro) => {
     return pro.categoria == "Injetáveis";
@@ -36,7 +36,11 @@ export function Procedimentos() {
   });
 
   useEffect(() => {
-    getProc();
+    getProc().then(()=>{
+      proCo();
+      proIn();
+      proFa();
+    })
   }, []);
 
   return (
